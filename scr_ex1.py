@@ -4,6 +4,11 @@ from bs4 import BeautifulSoup
 def get_wikipedia_article(keyword):
     # WikipediaのURLを生成
     url = f"https://ja.wikipedia.org/wiki/{keyword}"
+
+    # User-Agent ヘッダーを設定
+    headers = {
+        'User-Agent': 'EducationalResearch; PythonTutorial/1.0; Contact: YourEmail@example.com'
+    }
     
     # ページのデータを取得
     response = requests.get(url)
