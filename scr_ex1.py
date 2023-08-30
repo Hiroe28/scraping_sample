@@ -23,9 +23,9 @@ def get_wikipedia_article(keyword):
     # HTMLを解析
     soup = BeautifulSoup(response.content, 'html.parser')
 
-    # タイトルと最初の3つのパラグラフを取得
+    # タイトルと最初の5つのパラグラフを取得
     title = soup.find('h1', {'id': 'firstHeading'}).text
-    paragraphs = soup.find_all('p', limit=3)
+    paragraphs = soup.find_all('p', limit=5)
     intro_text = ' '.join([p.text for p in paragraphs])
 
     return title, intro_text
@@ -38,4 +38,4 @@ title, intro_text = get_wikipedia_article(keyword)
 
 
 print("タイトル:", title)
-print("最初の3つのパラグラフ:", intro_text)
+print("最初の5つのパラグラフ:", intro_text)
