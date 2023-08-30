@@ -37,5 +37,5 @@ keyword = "Python"
 title, intro_text = get_wikipedia_article(keyword)
 
 
-print("タイトル:", title)
-print("最初の5つのパラグラフ:", intro_text)
+print("タイトル:\n", title)
+print("最初の5つのパラグラフ:\n", intro_text)
