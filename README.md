@@ -1,6 +1,7 @@
 # 調和技研ウェブサイトスクレイピングツール
 
-株式会社調和技研の公式ウェブサイト（https://www.chowagiken.co.jp/）　から企業情報を自動取得するPythonスクレイピングツールです。
+株式会社調和技研の公式ウェブサイト（https://www.chowagiken.co.jp/）
+から企業情報を自動取得するPythonスクレイピングツールです。
 
 ## 📋 概要
 
@@ -156,4 +157,5 @@ def save_to_excel(self, data, filename='chowagiken_data.xlsx'):
     # Excel形式での保存機能追加例
     pass
 ```
+
 
